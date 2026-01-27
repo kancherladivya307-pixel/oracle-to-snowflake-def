@@ -14,3 +14,4 @@ This step sets up the AWS EC2 instance that will run the data platform component
 
 
 01. Create SSH key pair — def-keypair.pem downloaded and stored securely.
+02. Created IAM role `def-ec2-role` with S3 and CloudWatch permissions.
