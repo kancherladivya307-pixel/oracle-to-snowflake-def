@@ -11,3 +11,6 @@ This step sets up the AWS EC2 instance that will run the data platform component
 - 03. Create Security Group
 - 04. Launch EC2 instance
 - 05. SSH into EC2 and install base packages
+
+
+01. Create SSH key pair — def-keypair.pem downloaded and stored securely.
