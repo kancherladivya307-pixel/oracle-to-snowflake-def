@@ -21,7 +21,9 @@ This step sets up the AWS EC2 instance that will run the data platform component
 06. Install Git and basic utilities-Git installed and verified using git --version.
 07.  Python virtual environment
 On Amazon Linux 2023, Python virtual environment support is included by default.
-Created and activated a Python virtual environment using python3 -m venv.
+  Created and activated a Python virtual environment using python3 -m venv.
+08.Apache Airflow installation- Installed Apache Airflow in a Python virtual environment and verified using `airflow version`.
+
 
 
 
