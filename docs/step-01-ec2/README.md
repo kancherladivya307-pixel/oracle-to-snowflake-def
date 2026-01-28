@@ -26,6 +26,8 @@ On Amazon Linux 2023, Python virtual environment support is included by default.
 09.# Step 03 — Apache Airflow Setup
  Initialize Airflow
  Initialized Airflow metadata database and generated required directories.
+10.create Airflow admin user
+  Created an admin user for accessing the Airflow UI.
 
 
 
