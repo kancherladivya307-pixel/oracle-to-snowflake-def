@@ -23,6 +23,11 @@ This step sets up the AWS EC2 instance that will run the data platform component
 On Amazon Linux 2023, Python virtual environment support is included by default.
   Created and activated a Python virtual environment using python3 -m venv.
 08.Apache Airflow installation- Installed Apache Airflow in a Python virtual environment and verified using `airflow version`.
+09.# Step 03 — Apache Airflow Setup
+ Initialize Airflow
+ Initialized Airflow metadata database and generated required directories.
+
+
 
 
 
