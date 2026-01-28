@@ -19,6 +19,10 @@ This step sets up the AWS EC2 instance that will run the data platform component
 04. Launched EC2 instance
 05.Update Operating System-System packages verified and up to date using dnf.
 06. Install Git and basic utilities-Git installed and verified using git --version.
+07.  Python virtual environment
+On Amazon Linux 2023, Python virtual environment support is included by default.
+Created and activated a Python virtual environment using python3 -m venv.
+
 
 
 
