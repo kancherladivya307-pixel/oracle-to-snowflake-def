@@ -18,6 +18,7 @@ This step sets up the AWS EC2 instance that will run the data platform component
 03. Created security group `def-ec2-sg` allowing SSH (port 22) from my IP only.
 04. Launched EC2 instance
 05.Update Operating System-System packages verified and up to date using dnf.
+06. Install Git and basic utilities-Git installed and verified using git --version.
 
 
 
