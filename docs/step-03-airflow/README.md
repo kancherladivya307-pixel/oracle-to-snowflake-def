@@ -1,9 +1,8 @@
 Step 03 — Airflow Setup on EC2
-Objective
-
+Objective:
 Deploy Apache Airflow on AWS EC2 and securely access the UI using SSH port forwarding.
 
-1. Environment Setup
+**1. Environment Setup**
 
 EC2 instance launched in public subnet
 
@@ -16,7 +15,8 @@ No public exposure of Airflow UI (port 8080 not publicly required)
 Python virtual environment created
 
 AIRFLOW_HOME set to:~/def-platform/airflow
-2. Airflow Initialization
+
+**2. Airflow Initialization**
 export AIRFLOW_HOME=~/def-platform/airflow
 airflow db init
 
@@ -25,7 +25,7 @@ Disabled example DAGs in airflow.cfg:
 
 load_examples = False
 
-3. Create Admin User
+**3. Create Admin User**
 airflow users create \
   --username admin \
   --firstname Admin \
@@ -33,16 +33,16 @@ airflow users create \
   --role Admin \
   --email admin@example.com
 
-4. Start Services
+**4. Start Services**
 airflow webserver --host 0.0.0.0 --port 8080 &
 airflow scheduler &
 
 
-Verified:
+**Verified:**
 
 curl -I http://127.0.0.1:8080
 
-5. Secure UI Access via SSH Port Forwarding (Recommended)
+**5. Secure UI Access via SSH Port Forwarding **
 
 Instead of exposing port 8080 publicly, SSH tunneling was used.
 
@@ -61,15 +61,13 @@ Access Airflow UI via:
 http://localhost:8080
 
 
-This ensures:
-
 No public exposure of Airflow UI
 
 No dependency on public IP changes
 
 Secure encrypted access
 
-6. Verification
+**6. Verification**
 
 Webserver running (Gunicorn)
 
