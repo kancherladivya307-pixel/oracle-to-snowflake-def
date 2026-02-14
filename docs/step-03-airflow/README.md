@@ -89,3 +89,33 @@ Airflow Webserver (Gunicorn)
 Airflow Scheduler
         ↓
 SQLite Metadata DB
+
+**Step 03.04 – DAG Execution & Validation**
+Objective
+
+Validate Airflow orchestration by creating and executing a custom DAG with multiple sequential Bash tasks.
+
+DAG Created
+
+hello_def.py
+
+Located in:
+
+~/def-platform/airflow/dags/
+
+Browser (localhost:8080)
+        ↓
+SSH Tunnel (Port 22)
+        ↓
+EC2 Instance
+        ↓
+Airflow Webserver (Gunicorn)
+        ↓
+Scheduler
+        ↓
+SequentialExecutor
+        ↓
+BashOperator (subprocess)
+
+
+
