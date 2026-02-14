@@ -1,0 +1,2 @@
+Hi this is my first file in git UI
+I am in this file writing line 2 using nano
