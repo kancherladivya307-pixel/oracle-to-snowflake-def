@@ -1,0 +1,15 @@
+# Data files (keep structure, not data)
+data/raw/*.csv
+data/staged/
+data/parquet/
+data/load_to_oracle.py
+
+# Logs
+logs/*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
