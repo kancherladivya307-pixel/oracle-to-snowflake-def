@@ -22,7 +22,7 @@ with DAG(
     dag_id="insurance_daily",
     default_args=default_args,
     description="DEF Pipeline: Oracle -> S3 -> Snowflake (RAW -> CURATED)",
-    schedule_interval=None,
+    schedule_interval='*/2 * * * *',
     start_date=datetime(2026, 1, 1),
     catchup=False,
     tags=["def", "insurance", "pipeline"],
